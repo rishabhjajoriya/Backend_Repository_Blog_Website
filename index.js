@@ -25,7 +25,7 @@ app.use("/user", userRoutes);
 
 mongoose
   .connect(
-    `mongodb+srv://abhijain3002:${process.env.MONGOPASSWORD}@cluster0.ol5venw.mongodb.net/`
+    `mongodb+srv://rishabhjajoriya27:${process.env.MONGODB_PASSWORD}@blog.axldvtd.mongodb.net/`
   )
   .then(() => {
     console.log("Mongodb connected successfully");
@@ -35,6 +35,6 @@ mongoose
     console.log("Mongodb Failed to Connect");
   });
 
-app.listen(5000, () => {
-  console.log("Server is started listening at port 5000.");
+app.listen(2700, () => {
+  console.log("Server is started listening at port 2700.");
 });
